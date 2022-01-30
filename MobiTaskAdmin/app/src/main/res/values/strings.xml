@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MobiTask</string>
+
+    <string name="not_sufficient_permissions">Not sufficient permissions for this action\ngoto Settings>Apps>%1$s>Permissions</string>
+    <string name="choose_image_source">Choose Image Resource</string>
+    <string name="this_device_is_not_supported">Play services error. This Device is not supported</string>
+    <string name="netwrk_status">Network Status</string>
+    <string name="retry">Retry</string>
+    <string name="are_you_sure_want_to_exit">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="please_wait">Please wait</string>
+    <string name="facebook_app_id">1395980143820497</string>
+    <string name="fb_login_protocol_scheme">fb1395980143820497</string>
+    <string name="start_time">Start Time\n%1$s</string>
+    <string name="end_time">End Time\n%1$s</string>
+    <string name="signin_time">SignIn Time : %1$s</string>
+    <string name="signout_time">SignOut Time : %1$s</string>
+    <string name="task_num">Task\n%1$d</string>
+</resources>

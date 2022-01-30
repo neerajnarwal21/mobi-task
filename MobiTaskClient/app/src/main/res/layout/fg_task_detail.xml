@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentNSV"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="Task Title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_18sp" />
+
+        <TextView
+            android:id="@+id/taskHeadTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="2dp"
+            android:text="dscvnkdv"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_18sp" />
+
+            <LinearLayout
+                android:id="@+id/audioLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/audioIV"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_m_play_color_p" />
+
+                <ProgressBar
+                    android:id="@+id/downloadPB"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_m_play_color_p"
+                    android:theme="@style/colorPrimaryTheme"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/audioTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Audio"
+                    android:textColor="@color/DimGray" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/recordL"
+            layout="@layout/inc_sound_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/taskDescTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="2dp"
+            android:text="dscvnkdv"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_16sp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="5dp"
+            android:padding="@dimen/_10dp">
+
+            <TextView
+                android:id="@+id/locationTextTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_18sp" />
+
+            <TextView
+                android:id="@+id/addressTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="efgesfjebwgfgewjfgewfhejek jede kigege"
+                android:textColor="@color/Green"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/directionsIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationTextTV" />
+
+            <ImageView
+                android:id="@+id/directionsIV"
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:src="@drawable/ic_near_me_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10dp">
+
+            <TextView
+                android:id="@+id/inTimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_16sp" />
+
+            <View
+                android:layout_width="@dimen/_1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_4dp"
+                android:background="@color/LightGrey" />
+
+            <TextView
+                android:id="@+id/outTimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_grey_frame">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/locIV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_location" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/LightGrey" />
+
+                <ImageView
+                    android:id="@+id/picIV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_person_add" />
+            </LinearLayout>
+
+            <com.task.mobi.customViews.MyTextView
+                android:id="@+id/yourAddressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/Black_trans"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:maxLines="2"
+                android:paddingBottom="2dp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:paddingTop="2dp"
+                android:text="#3344,Phase 5, Sector 59, Sahibzada Ajit Singh Nagar, Punjab, India"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/workDoneET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="start"
+            android:hint="Workdone"
+            android:lines="6"
+            android:padding="@dimen/_10dp"
+            android:textSize="@dimen/_14sp" />
+
+        <Button
+            android:id="@+id/submitBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_25dp"
+            android:background="@drawable/skyblue_button"
+            android:text="Mark Sign In"
+            android:textColor="@color/White" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

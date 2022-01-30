@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_splash"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:src="@mipmap/ic_splash_icon"
+        app:layout_constraintBottom_toTopOf="@id/signUpBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.task.mobiadmin.customViews.MyButton
+        android:id="@+id/signUpBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/btn_trans_red"
+        android:text="SIGNUP"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toTopOf="@id/loginBT"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.task.mobiadmin.customViews.MyButton
+        android:id="@+id/loginBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/btn_white"
+        android:text="LOGIN"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/gBT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.task.mobiadmin.customViews.MyTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:text="OR CONNECT WITH"
+            android:textColor="@color/White" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="22dp"
+            android:layout_toStartOf="@+id/textView"
+            android:background="@color/White" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/textView"
+            android:background="@color/White" />
+    </RelativeLayout>
+
+
+    <com.task.mobiadmin.customViews.MyButton
+        android:id="@+id/fbBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_fb"
+        android:drawablePadding="@dimen/_10dp"
+        android:drawableStart="@mipmap/ic_fb"
+        android:gravity="center"
+        android:minHeight="@dimen/_40dp"
+        android:paddingEnd="@dimen/_20dp"
+        android:paddingStart="@dimen/_20dp"
+        android:text="FACEBOOK"
+        android:textColor="@color/White"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.task.mobiadmin.customViews.MyButton
+        android:id="@+id/gBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_google"
+        android:drawablePadding="@dimen/_10dp"
+        android:drawableStart="@mipmap/ic_google"
+        android:gravity="center"
+        android:minHeight="@dimen/_40dp"
+        android:paddingEnd="@dimen/_20dp"
+        android:paddingStart="@dimen/_20dp"
+        android:text="GOOGLE"
+        android:textColor="@color/White"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fbBT" />
+</android.support.constraint.ConstraintLayout>

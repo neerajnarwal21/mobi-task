@@ -1,0 +1,11 @@
+/app/build
+/app/*.iml
+/app/release
+/gradlew
+/gradle
+/build
+/gradlew.bat
+/*.iml
+/*.gradle
+/.idea
+/.gradle

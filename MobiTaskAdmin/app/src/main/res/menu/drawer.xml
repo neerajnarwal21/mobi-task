@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_d_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/ic_d_task_history"
+            android:title="Task History" />
+        <item
+            android:id="@+id/empList"
+            android:icon="@drawable/ic_users"
+            android:title="User Management" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_d_logout"
+            android:title="Logout" />
+    </group>
+</menu>

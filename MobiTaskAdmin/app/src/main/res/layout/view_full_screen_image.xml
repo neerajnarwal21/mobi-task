@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.task.mobiadmin.utils.TouchImageView
+        android:id="@+id/imageTIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/White" />
+
+    <ImageView
+        android:id="@+id/closeIV"
+        android:layout_width="@dimen/_25dp"
+        android:layout_height="@dimen/_25dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btn_red_more_round"
+        android:padding="4dp"
+        android:src="@drawable/ic_close_white" />
+</RelativeLayout>

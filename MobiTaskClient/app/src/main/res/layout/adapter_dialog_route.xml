@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/leftRL"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_8dp">
+
+        <View
+            android:id="@+id/topV"
+            android:layout_width="@dimen/_2dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/centerIV"
+            android:layout_centerHorizontal="true"
+            android:background="@color/DarkSlateGray" />
+
+        <ImageView
+            android:id="@+id/centerIV"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:id="@+id/bottomV"
+            android:layout_width="@dimen/_2dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/centerIV"
+            android:layout_centerHorizontal="true"
+            android:background="@color/DarkSlateGray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:padding="@dimen/_10dp">
+
+        <TextView
+            android:id="@+id/locationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="fuvhd"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/lengthTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationTV"
+            android:layout_marginTop="@dimen/_4dp"
+            android:text="2 km"
+            android:textColor="@color/DarkGreen"
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:id="@+id/dateTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/locationTV"
+            android:layout_marginTop="@dimen/_4dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
